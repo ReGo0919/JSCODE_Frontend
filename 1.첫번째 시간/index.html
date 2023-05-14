@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- 스타일시트 참조 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 구글 노토 산스체 -->
+    <title>블로그</title>
+  </head>
+  <body>
+    <h1 id="logo">다시가리 블로그</h1>
+    <hr />
+    <div class="middle">
+      <h2>블로그에 오신 것을 환영합니다!</h2>
+      <h3>
+        블로그에 있는 글을 읽으시려면 아래의 입력창에 아이디와 비밀번호를
+        입력해주셔야 합니다.
+      </h3>
+      <input type="id" placeholder="아이디" />
+      <input type="password" value="" placeholder="비밀번호" />
+      <input type="button" value="로그인" />
+      <!-- input으로 id입력란, 패스워드 입력란(password는 알아서 값을 마킹해줌), button 입력란 생성. -->
+      <hr />
+    </div>
+    <div class="center">
+      <h3>갤러리</h3>
+      <h4>(해당 이미지 클릭시 관련 영상으로 이동 됩니다.)</h4>
+      <div class="slider">
+        <!-- css의 slider 관련 효과를 적용 시켜주었고 각 사진 클릭시 해당 url로 이동토록 적용함. -->
+        <a href="https://www.youtube.com/watch?v=l-J75a_PrcI&t=235s"
+          ><img src="image/1.jpg" alt="default" width="300px" height="200px"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=v3AH566sqG8&t=192s"
+          ><img src="image/2.jpg" alt="default" width="300px" height="200px"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=93x0l6jx4XM&t=221s"
+          ><img src="image/3.jpg" alt="default" width="300px" height="200px"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=YW4BrA6pP5o"
+          ><img src="image/4.jpg" alt="default" width="300px" height="200px"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=ahoIwdkXuwM&t=171s"
+          ><img src="image/5.jpg" alt="default" width="300px" height="200px"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=xCBg9vR5ZDc"
+          ><img src="image/6.jpg" alt="default" width="300px" height="200px"
+        /></a>
+      </div>
+
+      <hr />
+      <h3>좋아하는 책</h3>
+    </div>
+    <ul>
+      <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=301199366"
+        ><li>위라클</li></a
+      >
+      <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=298330347"
+        ><li>때로는 행복 대신 불행을 택하기도 한다</li></a
+      >
+    </ul>
+    <hr />
+    <div class="logos">
+      <h3>검색 엔진으로 이동</h3>
+      <a href="http://www.naver.com/">
+        <img src="image/NAVER.jpg" alt="네아버" width="60" height="60" />
+      </a>
+      <p></p>
+      <a href="http://www.google.com/">
+        <img src="image/GOOGLE.png" alt="구글" width="50" height="50" />
+      </a>
+      <!-- 로고에 링크 삽입을 위해 img태그를 a태그로 감쌈. -->
+    </div>
+  </body>
+</html>
+
+<!--느낀점 
+    js 파일을 적용 해도 안되는 것들이 있어서 이런 것들을 직접적으로 물어봐야 할 것 같다. 확실히 혼자 하는대에는 한계가 있다.
+ -->

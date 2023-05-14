@@ -1,0 +1,97 @@
+/*
+    유노코딩 css 강의 감상평 : 시간이 없어서 근무 할 때 css 강의를 정청하기만 하고 따로 정리를 하지 못했는데
+    기본적으로 박스모델이나 position 부분에서 개념을 다시 정리 할 수 있었던 것 같습니다.
+    하지만 뒤에 나오는 16강 부터의 개념들은 실습을 같이 병행해야 정리가 될 것 같아서 이번 주말에 실습을 병행 하면서 같이 개념을 정리 하고자 합니다.
+*/
+body {
+  background-color: #ffffff;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.google-logo {
+  align-self: center;
+  max-width: 1000px; /* 로고의 최대 너비를 200px로 제한 */
+  height: auto;
+}
+.login-container {
+  /*
+  이번에 추가한 속성은 box-shadow 폼으로서 첫번째 인자는 왼쪽(-)과 오른쪽의 가로방향, 두번째 인자는 위쪽(-)과 아래쪽 방향의 세로방향,
+  세번째 인자는 섀도우의 번짐 효과의 정도, rgba(0, 0, 0, | 0.2)는 각각 색상과 투명도(a)의 값이다.
+  */
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 310px;
+  width: 290px;
+  position: relative;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.login-container img:first-child {
+  width: 20%;
+  height: auto;
+}
+.login-container img:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .links {
+  align-self: flex-start;
+}
+.input-box input {
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  width: 210px;
+  margin: 5px;
+}
+input::placeholder {
+  /*
+ input 버튼의 placeholder에 색상을 주기 위해서는 가상선택자(::) 가 사용 되는데
+ 이 가상 선택자는 CSS에서 요소의 특정 상태나 위치를 선택하기 위해 사용 된다고 하며
+ :와도 혼용 되어 사용해도 문제가 없다고한다.
+ */
+  color: #999999;
+}
+button {
+  background-color: #4285f4;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: center;
+  margin: 15px 0 10px 0;
+  padding: 10px;
+  width: 235px;
+}
+.links a {
+  color: #4285f4;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 0 6px;
+  text-decoration: none;
+}
+.links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #009000;
+}
+
+/*
+
+*/

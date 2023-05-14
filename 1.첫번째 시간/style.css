@@ -1,0 +1,57 @@
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* h1부터 h3까지 font style을 적용(구글 산스) */
+#logo {
+  background-image: url("image/new_logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: unset;
+  height: 250px; /* 원하는 높이 값으로 변경하세요 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: opacity 1s ease-in;
+}
+/* logo의 background에 이미지를 넣어 각각의 사이즈와 위치, 그림 반복을 조정하고 margin을 제거하여
+hr바와 조금이라도 가깝게 위치 시키고자 했으며 display를 flex로 지정 후 안에 있는 '다시가리' 글귀를 정중앙(justify와 aligh을 이용)에 
+위치 시켰고 배경 투명도는 0.5(절반), 트랜지션 효과를 주어 0.5초부터 1초 까지 천천히 등장하도록 하려 하였으나 적용이 안됨
+*/
+#logo h1 {
+  color: black;
+  font-weight: bold;
+}
+/* 다시가리 글귀를 검정색으로 지정하려 했는데 이것도 안됨*/
+#logo.show {
+  color: red;
+  background-color: black;
+}
+/* 혹시 몰라서 index.js 파일에 setTimeout 함수를 #logo 클래스 리스트에 저장 시켜준 후 css파일에 호출 했는데 그것도 적용 안됨. */
+
+.middle {
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+ul {
+  list-style-position: inside;
+  text-align: center;
+}
+/* middle, center, ul은 정중앙 위치인데 ul의 닷(점)도 중앙에 위치 시켜주기 위해 inside로 지정해줌. */
+.logos {
+  list-style-position: inside;
+  text-align: center;
+}
+.slider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+/* 갤러리의 사진들이 자동으로 알아서 이동하게끔 하려 했으나 그정도까지는 무리일 것 같고 overflow를 이용하기로 했는데
+그럴려면 사진들이 한줄로 나열되어야 하므로 공백(white-space)이 생길 때 개행 금지(nowrap)를 시켜주어 한 줄로 만들어줌.
+*/
