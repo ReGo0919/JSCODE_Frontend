@@ -1,0 +1,79 @@
+.container {
+  padding-top: 100px;
+  background: beige;
+  height: 100vh;
+  /*vh는 부모(body html)의 지정 크기에 상관 없이 viewport height 값을 해당 치수 만큼 설정 하겠음을 의미함. */
+  display: flex;
+  /* flex 설정시  아이템들이 자동으로 오른쪽 정렬 됨.*/
+  /*flex-direction: row;
+   flex-direction은 일종의 컨텐츠들의 메인축을 결정 짓는 정렬 방향을 의미하며 reverse를 추가할시 오른쪽에서부터 정렬이 시작이 됨.  */
+  /* flex-wrap: nowrap;
+  flex-wrap은 아이템들이 많아지면 창조절에 따라 자동적으로 다음 열, 행에 자동으로 아이템들을 모아주는 속성을 의미하며 reverse속성도 추가로 사용 가능하다. */
+  /* flex-flow: column nowrap; 
+  flex-direction과 wrap을 합한 속성으로 */
+  /*justify-content: space-between;
+   아이템들을 중심축으로부터(main axis) 처음부터(왼쪽에서 오른쪽으로) 정렬 이 속성은 reverse 적용이 안됨. 
+  추가로 space-around 속성은 아이템마다 space 영역들을 넣어주는 속성이고 space-evernly는 균등하게, 
+  space-between은 양쪽 아이템들은 공간 없이 나열한 채 그 나머지 아이템들에 space를 주는 속성이다.*/
+  /*align-items: baseline;
+  정렬은 반대축(cross axis)에서 이루어지며
+  align-items에는 baseline이 있는데 각각의 아이템들의 텍스트 위치가 다를 시 baseline 속성 설정시
+  같은 라인을 중심으로 텍스트들이 일렬로, 아이템들이 전부 배치된다.
+  단 align-items는 아이템들이 전부 교차축으로 정렬 되어있을때에만 사용 되므로
+  여러줄의 아이템 간 간격 및 정렬은 불가능하다.
+  */
+  /*align-content: center;
+   설명은 justify-content와 동일하며 정렬은 align-items와 같이 반대축(cross axis)에서 이루어지는데
+  다른점은 단일 줄에만 적용 되는 align-items에 비해 align-content는 여러줄의 아이템들 사이의 간격과 정렬이 지정 가능하다는 점이다.
+
+  */
+}
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  /* border(두께, 스타일, 색사) */
+}
+.item1 {
+  background: #ef9a9a;
+  order: 1;
+  /* order는 해당 flexbox의 아이템의 순서를 변경 할 수 있음. */
+  flex-grow: 1;
+  /* flex-grow는 창 조절에 따라 해당 아이템의 크기가 커지는 비율을 의미하는데
+  item1에만 flex-grow1을 설정하면 나머지 2,3은 창이 아무리 늘어나도 크기가 고정이 되고
+  늘어난 창의 크기만큼 item1만 크기가 커지게 된다.
+  만약 item2, item3에도 각각 flex-grow:1을 주게 되면 창이 늘어남에따라 아이템들이 커지는 비율은 각각 1:1:1이 된다. */
+  flex-shrink: 1;
+  /*반대로 창이 줄어들게됨에 따라 줄어드는 비율을 정하는 속성을 shrink이다.*/
+  flex-basis: 60%;
+  /*grow와 shrink를 합친 기능으로 창의 커지고 줄어듬에 따라 변화 되는 크기를 한번에 설정 가능하다.*/
+  align-self: center;
+  /* 컨테이너에 지정 된 정렬을 제외하고 해당 아이템을 별도로 정렬 하고 싶을때 사용.  */
+}
+.item2 {
+  background: #f48fb1;
+}
+.item3 {
+  background: #ce93d8;
+}
+.item4 {
+  background: #b39ddb;
+}
+.item5 {
+  background: #90caf9;
+}
+.item6 {
+  background: #a5d6a7;
+}
+.item7 {
+  background: #e6ee9c;
+}
+.item8 {
+  background: #fff59d;
+}
+.item9 {
+  background: #ffcc80;
+}
+.item10 {
+  background: #ffab91;
+}
