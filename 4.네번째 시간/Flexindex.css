@@ -1,0 +1,63 @@
+/* 첫번째 미션 */
+.container1 {
+  display: flex;
+  height: 100vh;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+/* 두번째 미션 */
+.container2 {
+  border: 1px solid black;
+  width: 500px;
+  padding: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.input-wrapper label {
+  margin-right: 10px;
+}
+.input-wrapper input {
+  flex-grow: 1;
+}
+/* 세번째 미션 */
+.container3 {
+  background-color: #c8d3ff;
+  padding: 20px;
+}
+
+.content {
+  background-color: white;
+  text-align: center;
+}
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  padding: 10px;
+  flex-basis: 30%;
+}
+
+.box1 {
+  background-color: #fff3b9;
+}
+
+.box2 {
+  background-color: #97ffcc;
+}
+
+.box3 {
+  background-color: #ffc4ec;
+}

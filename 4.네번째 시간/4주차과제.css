@@ -1,0 +1,46 @@
+/* 첫번째 과제 */
+
+* {
+  margin: 0;
+}
+.nav {
+  font-size: 50px;
+  color: blue;
+  height: 50px;
+  width: 100%;
+  background-color: pink;
+  border: 5px solid blue;
+  position: fixed;
+  /* 기본적으로 position을 fixed로 설정 할 경우 viewport를 기준으로 독립적인 운용이 가능하다. 
+  근데 이럴 경우 블록은 크기에 맞게 형성 되지만 텍스트의 크기에 따라 블록이 형성 되기 때문에
+  기본 block 속성처럼 한 줄을 그냥 먹지는 않는다. 
+  그래서 width를 100%으로 설정해서 화면 끝까지를 잡아주면 된다. */
+}
+
+.content {
+  font-size: 50px;
+}
+/* 두번째 과제 */
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 30%;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  left: 425px;
+  bottom: 25px;
+  /* 여기서 left, right, top, bottom의 개념은 해당 방향으로 가라는게 아니라 해당 방향으로 아이템을 떨어트리라는 것을 의미한다. */
+}

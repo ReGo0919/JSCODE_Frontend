@@ -1,0 +1,25 @@
+div,
+span {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  background: pink;
+}
+div {
+  background: red;
+}
+span {
+  background: blue;
+  display: block;
+  /* div는 block 요소여서 한 블록을 다 쓰고, span은 인라인 요소라서 한 줄에 정렬 되어 나오기 때문에
+  display속성을 block이나 inline-block으로 지정하여 속성을 바꿔줄 수 있다. 
+  참고로 inLine-block은 지정 된 크기의 값을 갖는대에 반해 inline은 태그 안의 값들만을 inline으로 바꿔주는 것을 의미한다.*/
+  position: relative;
+  /* position 속성은 default 값이 static으로 되어 있어서 방향 속성을 적용하기 위해서는
+  relative로 값을 변경 해주어야 한다.
+  또한 absolute 속성은 item이 담겨있는 상자의 왼쪽 상단을 기준으로 방향이 조절된다.
+  또한 fixed 속성은 모든 걸 다 무시하고 웹페이지의 왼쪽 상단을 기준으로 방향이 조절된다.
+  마지막으로 sticky는 스크롤링 시 원래 있어야 할 자리에서 고정 되는 속성을 의미한다. */
+  left: 20px;
+  right: 20px;
+}
