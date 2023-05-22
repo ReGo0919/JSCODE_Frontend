@@ -1,0 +1,28 @@
+/* semantic 태그란 이름에 의미가 있는 태그이다. 즉 이름을 부여 함으로써 자주 사용하는 이름을 태그명으로 설정 된 태그이다.
+시멘틱 태그의 중요성은 SEO(search engine optimization, Accessibility(시각 뿐만 아니라 다양한 방법으로 접근 가능한 특성), 
+For us (Maintainability) 세 가지가 있다.
+*/
+/* article VS section
+article은 main 안의 아이템들과 상관 없이 독립적인 내용을 보여줄때 사용하고
+section은 article 안이나 main 안이나 상관 없이 연관 있는 내용(아이템) 들을 묶을 때 사용한다.
+*/
+/* i VS em
+i와 em은 이태릭 체로 별 의미는 없지만 em이 의미를 좀 더 강조하는 역할로서 사용된다.
+*/
+
+/* b VS strong
+b는 시각적으로 진하게(bold), strong은 정말 중요한 볼드체임을 강조 할 때 사용된다.
+*/
+/* ol VS ul VS dl
+ol은 ordered list, ul은 unordered list, dl은 description list로 단어(dt)와 그에 대한 설명(dd)을 표현 할 때 사용된다.
+*/
+/* img VS background-image
+이미지가 하나의 요소로서 문서 안에서 자리가 잡혔을 때에는 img를 사용하고, 
+background-img는 이미지가 문서의 하나의 요소가 아닌 임의의 이미지로 배경을 꾸밀 때 css의 스타일에서 사용하는 속성이다.
+*/
+/* button VS a
+button은 사용자가 어떠한 특정 액션을 취할 때 사용되고, a는 사용자가 클릭을 했을 때 걸러져있는 링크로 이동시 사용된다.
+*/
+/* table VS css
+예전에는 스타일링의 목적으로도 table을 사용하는 경우가 많았는데 최근에는 grid나 flex를 사용해서 스타일링을 표현한다.
+*/
